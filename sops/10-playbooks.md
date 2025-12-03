@@ -83,3 +83,13 @@ Use these turnkey sequences when spinning up autonomous runs for web projects. E
 8) Security & privacy: security headers baseline (CSP, HSTS, Referrer-Policy, Permissions-Policy), dependencies scanned, SBOM stored; consent/GPC honored and logged.
 9) Observability: standard log fields (trace/span, user/session anon id), uptime checks for top journeys, SLOs with error budgets, alert runbooks, and postmortems within 72h.
 10) Continuous improvement: monthly retro on incident/assessment findings; add failing test for each defect before fix; archive lessons in the playbook.
+
+## P9: Evaluate External AI Website Builders (leaked/aggregate repos)
+1) Inventory candidate repos (AutoGPT-Next-Web, AgentGPT forks, Spark-Engine Next.js generator, “awesome-ai-website-builders” lists). Mirror to an isolated org and pin commits.
+2) Security intake: SBOM + dependency scan (npm audit/OSV + Snyk/GHSA), review env handling, remove telemetry keys, disable outbound analytics.
+3) Quality baseline: generate a sample marketing page + form + blog post; run lint/type, unit tests, Lighthouse CI, axe, and visual diff. Fail if Perf <90 or A11y <95.
+4) Content/SEO: verify canonical, sitemap, robots, OG/Twitter, schema.org (Article/Product/FAQ) emitted by default; ensure hreflang/canonical pairs when multi-lingual enabled.
+5) Accessibility: check 44px targets, focus-visible, skip links, label associations, and no keyboard traps in generated UI; run screen-reader smoke.
+6) Performance: ensure JS bundle <200KB gz per generated page, hero image optimized (AVIF/WebP + preload), priority hints set; measure INP/LCP via Lighthouse.
+7) Operability: ensure generated repo has CI templates (lint/test/LH/axe), branch protections, and environment configs; strip hardcoded domains.
+8) Approval: record findings in ADR; only allow generator behind a feature flag; rerun validation on upgrades.

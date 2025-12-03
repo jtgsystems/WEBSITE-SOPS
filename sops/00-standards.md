@@ -94,3 +94,10 @@
   - Standardize event taxonomy (name, schema, PII classification); validate firing and deduplication
   - Ensure A/B tests have guardrails (SRM checks, exposure caps, kill switches) and documented hypotheses
   - Respect consent and geo rules before firing analytics/marketing pixels; provide server-side tagging where possible
+
+- [ ] **External AI Builder Intake Gate**
+  - Vet OSS/commercial AI website builders (e.g., AutoGPT-Next-Web, AgentGPT forks, Spark Engine Next.js Generator) for license compatibility (MIT/GPL) and supply-chain risk
+  - Require reproducible, air-gapped evaluation with lint/type/test/Lighthouse CI against your templates before adoption
+  - Disable built-in telemetry/analytics in forks; review default prompts, secrets handling, and network calls
+  - Enforce SBOM + dependency scanning on imported starter kits; patch or pin vulnerable packages before use
+  - Document baseline performance (Web Vitals), accessibility, and SEO outputs from the generator; fail if below house budgets
