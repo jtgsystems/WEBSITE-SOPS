@@ -16,6 +16,7 @@
   - Review resource optimization (images, fonts, scripts)
   - Confirm caching strategies and CDN implementation
   - Evaluate mobile performance and battery impact
+  - Add runtime Web Vitals beacons (LCP/INP/CLS/TTFB/FID) using `web-vitals` and ship to analytics for real-user monitoring
 
 - [ ] **Security Review Gate**
   - Assess input validation and sanitization

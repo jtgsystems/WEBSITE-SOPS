@@ -26,4 +26,5 @@
   - Label AI-generated or synthetic media (images, audio, video, text) per upcoming EU AI Act Article 50 transparency requirements; prefer C2PA/metadata tagging
   - Run automated prompt-attack suites (prompt injection, jailbreaks, data exfil) against shipped AI/agent features
   - Require final Lighthouse/PSI runs for homepage, top LPs, and checkout/booking flows; ensure budgets met (LCP/INP/CLS, bundle size, 3P script weight)
+  - Enforce performance budgets in CI: LCP <2.5s, INP <200ms, CLS <0.1, FCP <1.8s, TBT <200ms, JS <200KB gz per page; fail release if exceeded
   - Review go-live checklist and rollback plan
