@@ -1,3 +1,5 @@
+# 🔍 Quality Control Gates for Website Design
+
 ## 2025 Additional Standards (Applies to All Gates)
 - [ ] **Governance & Compliance Gate**
   - Validate data classification (public/internal/confidential/PII/PHI/PCI) and lawful bases (GDPR/CCPA/UK GDPR/PCI DSS/COPPA where applicable)
@@ -75,3 +77,4 @@
   - Standardize event taxonomy (name, schema, PII classification); validate firing and deduplication
   - Ensure A/B tests have guardrails (SRM checks, exposure caps, kill switches) and documented hypotheses
   - Respect consent and geo rules before firing analytics/marketing pixels; provide server-side tagging where possible
+
