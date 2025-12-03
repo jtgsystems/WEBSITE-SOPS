@@ -74,6 +74,10 @@
   - Log every agent action (prompt, tool call, file diff) to immutable storage with PII/key redaction
   - Provide explicit allowlist/denylist for commands and domains; disable self-updates and package installs unless pre-approved
   - Freeze production environments: agents may only touch feature branches or preview deployments; merges/deploys gated by automated policy checks
+  - Design agents with narrow roles and explicit handoffs (coordinator + specialists) to reduce conflict; keep reusable playbooks for repetitive tasks
+  - Manage context windows with summarization/chunking and retrieval; require checkpoints for long tasks to avoid drift
+  - Expose strong feedback loops (typed code, linters, full test suites) inside the agent environment to improve output quality
+  - Track token/credit spend per task and abort on runaway loops; prefer smaller models for simple subtasks
 
 - [ ] **Backup, DR & Business Continuity Gate**
   - Define RPO/RTO per system; schedule tested restores for databases, assets, and critical configs

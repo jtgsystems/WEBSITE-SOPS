@@ -8,6 +8,7 @@
   - Require unit/integration test coverage targets and mutation tests on critical paths; block merges on coverage drop
   - Enforce automated policy checks on AI/agent-generated diffs; block merges if missing tests or intent notes
   - Agents commit only to feature branches with bot identities; merges happen via automated quality gates (tests, lint, policy) and branch protection
+  - Provide pre-commit hooks and local parity scripts the agent can run (lint, typecheck, tests) to reduce CI/agent drift
 
 - [ ] **Performance Optimization Gate**
   - Validate Core Web Vitals metrics (LCP, INP, CLS)
