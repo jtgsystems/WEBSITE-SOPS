@@ -1,0 +1,353 @@
+================================================================================
+                   WEBSITE SOP CATALOG - MANIFEST
+================================================================================
+
+Created: December 2024
+Version: 1.0
+Status: Complete and Ready for Use
+Total Files: 11 Markdown documents + 25+ external resource links
+
+================================================================================
+                              DIRECTORY STRUCTURE
+================================================================================
+
+WEBSITE SOPS/
+├── README.md                                    [MAIN ENTRY POINT]
+├── GETTING-STARTED.md                           [START HERE FIRST]
+├── INDEX.md                                     [COMPLETE RESOURCE INDEX]
+├── CATALOG-SUMMARY.md                           [OVERVIEW & SUMMARY]
+├── MANIFEST.txt                                 [THIS FILE]
+│
+├── AI-CODING-ASSISTANTS/
+│   ├── DEVIN.md                                 [Devin AI - Autonomous Developer]
+│   ├── CURSOR.md                                [Cursor - AI Code Editor]
+│   └── COPILOT.md                               [GitHub Copilot - Native AI Coding]
+│
+├── WEB-FRAMEWORKS/
+│   └── NEXTJS.md                                [Next.js - React Framework Guide]
+│
+├── DEVELOPMENT-STANDARDS/
+│   └── GIT-WORKFLOW.md                          [Git Branching & Collaboration]
+│
+├── SECURITY/
+│   └── SECRET-MANAGEMENT.md                     [Secrets & Environment Variables]
+│
+└── TEMPLATES/
+    └── PROJECT-SETUP.md                         [New Project Initialization]
+
+================================================================================
+                            FILE DESCRIPTIONS
+================================================================================
+
+CORE NAVIGATION FILES (Read These First):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. GETTING-STARTED.md (NEW - Start Here!)
+   Purpose: Quick orientation and navigation guide
+   Audience: Everyone (especially new team members)
+   Time: 5-10 minutes to read
+   Contains: Scenarios, key concepts, first tasks
+
+2. README.md
+   Purpose: Main entry point with quick navigation
+   Audience: All developers
+   Time: 10-15 minutes to read
+   Contains: Directory structure, key standards, quick links
+
+3. INDEX.md
+   Purpose: Complete resource index with categorization
+   Audience: Reference document
+   Time: 5 minutes to scan
+   Contains: All documents and 25+ external links organized by category
+
+4. CATALOG-SUMMARY.md
+   Purpose: Complete summary and overview
+   Audience: Project managers, team leads
+   Time: 15-20 minutes to read
+   Contains: Document inventory, success metrics, extension guide
+
+
+AI CODING ASSISTANTS (Choose Your Tool):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. AI-CODING-ASSISTANTS/DEVIN.md
+   Purpose: Using Devin AI for autonomous code development
+   Audience: Developers using Devin
+   Sections: Setup, authentication, workflows, best practices, GitHub integration
+   Key Content: Knowledge onboarding (AGENTS.md), PR reviews, VPN setup
+
+6. AI-CODING-ASSISTANTS/CURSOR.md
+   Purpose: Using Cursor AI editor with GitHub integration
+   Audience: Developers using Cursor
+   Sections: Setup, configuration (.cursorrules), workflows, CLI, integrations
+   Key Content: GitHub agent workflows, Slack/Linear integration, best practices
+
+7. AI-CODING-ASSISTANTS/COPILOT.md
+   Purpose: Using GitHub Copilot for AI-assisted development
+   Audience: Developers using Copilot
+   Sections: Setup, chat, CLI, agentic workflows, custom instructions
+   Key Content: GitHub Actions integration, security practices, multi-editor support
+
+
+WEB FRAMEWORK & DEVELOPMENT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8. WEB-FRAMEWORKS/NEXTJS.md
+   Purpose: Complete Next.js development guide
+   Audience: Frontend/full-stack developers
+   Sections: Setup, project structure, development, testing, deployment, security
+   Key Content: Project structure conventions, example components, GitHub Actions,
+                performance optimization, security best practices
+
+
+VERSION CONTROL & WORKFLOW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9. DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md
+   Purpose: Git branching strategy and collaboration procedures
+   Audience: All developers
+   Sections: Gitflow workflow, commits, PRs, branching, conflict resolution
+   Key Content: Complete workflow examples, branch types, commit conventions,
+                PR requirements, protection rules
+
+
+SECURITY & CONFIGURATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10. SECURITY/SECRET-MANAGEMENT.md
+    Purpose: Comprehensive secret and environment variable management
+    Audience: All developers, security-conscious team members
+    Sections: .env files, GitHub Secrets, rotation, incident response
+    Key Content: Local development setup, production secrets, handling leaks,
+                 pre-commit hooks, rotation schedule
+
+
+PROJECT TEMPLATES & CHECKLISTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+11. TEMPLATES/PROJECT-SETUP.md
+    Purpose: Complete checklist for initializing new projects
+    Audience: Project leads, developers starting new projects
+    Sections: 10-phase setup process with detailed checklists
+    Key Content: GitHub setup, structure, dependencies, configuration,
+                 GitHub Actions, scripts, documentation, team setup
+
+
+================================================================================
+                              HOW TO USE
+================================================================================
+
+FOR NEW TEAM MEMBERS:
+1. Read: GETTING-STARTED.md (this file tells you what to do)
+2. Read: README.md
+3. Read: TEMPLATES/PROJECT-SETUP.md (for your machine setup)
+4. Read: DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md
+5. Read: SECURITY/SECRET-MANAGEMENT.md
+6. Choose & Read: Your AI tool guide from AI-CODING-ASSISTANTS/
+
+FOR NEW PROJECTS:
+1. Follow: TEMPLATES/PROJECT-SETUP.md (complete checklist)
+2. Reference: Other docs as needed during setup
+3. Configure: GitHub Actions from TEMPLATES/PROJECT-SETUP.md
+
+FOR DAILY DEVELOPMENT:
+1. Reference: DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md (for git procedures)
+2. Reference: SECURITY/SECRET-MANAGEMENT.md (for .env setup)
+3. Reference: AI tool guide (DEVIN, CURSOR, or COPILOT)
+4. Reference: WEB-FRAMEWORKS/NEXTJS.md (for implementation)
+
+FOR DEPLOYMENTS:
+1. Follow: Release process in DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md
+2. Verify: Secrets per SECURITY/SECRET-MANAGEMENT.md
+3. Deploy: Using procedures in WEB-FRAMEWORKS/NEXTJS.md
+
+FOR TROUBLESHOOTING:
+1. Search: Use Ctrl+F within document
+2. Check: The "Troubleshooting" section of relevant SOP
+3. Reference: "Related Resources" links at bottom of documents
+4. Ask: A team member (they've read these too!)
+
+
+================================================================================
+                            QUICK REFERENCE
+================================================================================
+
+MOST IMPORTANT FILES TO BOOKMARK:
+  1. GETTING-STARTED.md - Orientation
+  2. INDEX.md - Quick reference index
+  3. DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md - Daily workflow
+  4. SECURITY/SECRET-MANAGEMENT.md - Security checklist
+  5. TEMPLATES/PROJECT-SETUP.md - New projects
+
+KEY CONCEPTS:
+  - Gitflow: main → develop → feature/*
+  - Secrets: .env.local (don't commit) + GitHub Secrets (production)
+  - Commits: feat/fix/docs/refactor/perf/test/chore: message
+  - PRs: Feature branch → develop, needs 1+ review
+  - Deploy: Release procedure → main branch → production
+
+ESSENTIAL COMMANDS:
+  npm run dev              Start development server
+  npm run build            Build for production
+  npm test                 Run tests
+  npm run lint             Check code style
+  git checkout -b feature/name    Create feature branch
+  git commit -m "feat: description"   Commit changes
+  git push origin feature/name    Push to remote
+
+GOLDEN RULES (Never Forget):
+  ✅ Use feature branches
+  ✅ Create Pull Requests
+  ✅ Test before pushing
+  ✅ Review code
+  ❌ Never commit .env.local
+  ❌ Never force push shared branches
+  ❌ Never ignore test failures
+  ❌ Never skip security checks
+
+
+================================================================================
+                          EXTERNAL RESOURCES
+================================================================================
+
+The catalog links to 25+ external resources:
+
+AI Tools:
+  - Devin AI: https://docs.devin.ai
+  - Cursor: https://cursor.com/docs
+  - GitHub Copilot: https://github.com/features/copilot
+  - Sourcegraph Cody: https://docs.sourcegraph.com/cody
+
+Framework Documentation:
+  - Next.js: https://nextjs.org/docs
+  - React: https://react.dev
+  - GitHub: https://docs.github.com
+
+Community Collections:
+  - awesome-cursorrules (GitHub)
+  - SOPLibrary (GitHub)
+  - GDI Standard Operating Procedures (GitHub)
+
+And many more... See INDEX.md for complete list with links
+
+
+================================================================================
+                          SUCCESS METRICS
+================================================================================
+
+You're using the catalog successfully when:
+  ✅ All team members follow similar workflows
+  ✅ New projects start with known procedures
+  ✅ Code reviews are efficient and standardized
+  ✅ Security practices are implemented uniformly
+  ✅ Onboarding takes less time
+  ✅ Fewer mistakes and oversights occur
+  ✅ Team collaborates more effectively
+  ✅ Deployments are smooth and reliable
+
+
+================================================================================
+                          GETTING HELP
+================================================================================
+
+If you're confused:
+1. Search the relevant document (Ctrl+F)
+2. Check the INDEX.md for related resources
+3. Read the "Troubleshooting" section of the SOP
+4. Ask a team member
+5. Check the "Related Resources" links
+
+Common Questions:
+  "How do I...?"           → Check TEMPLATES/PROJECT-SETUP.md or INDEX.md
+  "Git workflow?"          → Read DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md
+  "How to use [tool]?"     → Read the relevant AI tool guide
+  "Secrets & .env?"        → Read SECURITY/SECRET-MANAGEMENT.md
+  "Can't find something?"  → Use INDEX.md to search
+
+
+================================================================================
+                          FEEDBACK & IMPROVEMENTS
+================================================================================
+
+Found something missing or unclear?
+- Note the document and section
+- Share feedback with your team lead
+- Suggest improvements in team meetings
+- Document your findings
+- Update SOPs with team approval
+
+This is a living document collection that should evolve with your team!
+
+
+================================================================================
+                          VERSION HISTORY
+================================================================================
+
+Version 1.0 - December 2024
+  Initial comprehensive SOP catalog created
+  Includes: 11 core documents + 25+ external resource links
+  Status: Ready for production use
+  Compiled from: Devin, Cursor, GitHub, Next.js, industry best practices
+
+
+================================================================================
+                          NEXT STEPS
+================================================================================
+
+TODAY:
+  1. Read GETTING-STARTED.md
+  2. Read README.md
+  3. Choose your first task
+  4. Find the relevant SOP
+
+THIS WEEK:
+  1. Complete your first task using the SOP
+  2. Ask questions
+  3. Give feedback
+
+THIS MONTH:
+  1. Use SOPs as daily reference
+  2. Share relevant sections with teammates
+  3. Suggest improvements
+
+
+================================================================================
+                          CATALOG INFORMATION
+================================================================================
+
+Created: December 2024
+Version: 1.0
+Status: Complete and Ready for Use
+Total Documents: 11 Markdown files
+External Resources: 25+ links
+Total Pages (estimated): 150+
+Estimated Read Time (all): 4-6 hours
+Quick Reference: 30 minutes
+
+Compiled From:
+  ✓ Devin AI (docs.devin.ai)
+  ✓ Cursor (cursor.com/docs)
+  ✓ GitHub Copilot (github.com/features/copilot)
+  ✓ Next.js (nextjs.org)
+  ✓ GitHub (github.com)
+  ✓ Webflow, Wix, Squarespace, Framer
+  ✓ Industry best practices
+  ✓ Community resources
+  ✓ Security standards
+
+Maintained By: Your Development Team
+License: Open Source (reference materials)
+Status: Active - Ready for team use
+
+================================================================================
+
+For more information, start with:
+  1. GETTING-STARTED.md (orientation)
+  2. README.md (overview)
+  3. INDEX.md (complete index)
+
+Then choose the SOP relevant to your task!
+
+Good luck! 🚀
+
+================================================================================
