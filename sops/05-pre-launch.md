@@ -2,6 +2,10 @@
 - [ ] **Content Quality Gate**
   - Review content accuracy and relevance
   - Validate SEO optimization and metadata
+  - Ensure XML sitemap is current, reachable, and submitted to Google/Bing; verify robots.txt allows key sections
+  - Check canonical tags, redirect maps, and trailing-slash rules; avoid duplicate URL variants
+  - Validate structured data (schema.org) and Open Graph/Twitter cards for key templates; confirm Rich Results tests pass
+  - Confirm hreflang/canonical pairs for localized sites; validate 404/410 behavior and custom error pages
   - Assess content accessibility and readability
   - Confirm localization and internationalization if applicable
   - Evaluate content performance and engagement potential
