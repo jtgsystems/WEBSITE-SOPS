@@ -4,10 +4,10 @@
   - Validate adherence to coding standards and best practices
   - Assess code maintainability and documentation
   - Confirm version control and collaboration practices
-  - Evaluate automated testing coverage and quality
+  - Enforce automated linters/formatters (ESLint, Prettier/Tailwind lint) on every change; fail CI on style or unused code
+  - Require unit/integration test coverage targets and mutation tests on critical paths; block merges on coverage drop
   - Enforce automated policy checks on AI/agent-generated diffs; block merges if missing tests or intent notes
   - Agents commit only to feature branches with bot identities; merges happen via automated quality gates (tests, lint, policy) and branch protection
-  - Keep agent credentials scoped (read-only repo, no production env vars)
 
 - [ ] **Performance Optimization Gate**
   - Validate Core Web Vitals metrics (LCP, INP, CLS)

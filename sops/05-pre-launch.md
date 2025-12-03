@@ -25,4 +25,5 @@
   - Confirm backup and disaster recovery procedures
   - Label AI-generated or synthetic media (images, audio, video, text) per upcoming EU AI Act Article 50 transparency requirements; prefer C2PA/metadata tagging
   - Run automated prompt-attack suites (prompt injection, jailbreaks, data exfil) against shipped AI/agent features
+  - Require final Lighthouse/PSI runs for homepage, top LPs, and checkout/booking flows; ensure budgets met (LCP/INP/CLS, bundle size, 3P script weight)
   - Review go-live checklist and rollback plan
