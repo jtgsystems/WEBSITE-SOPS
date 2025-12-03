@@ -6,6 +6,7 @@
   - Confirm responsive behavior across all devices
   - Review form validation and error handling
   - Evaluate integration with external services/APIs
+  - For agent-generated changes, require reproducible test script/commands from the agent log and rerun in a clean environment
 
 - [ ] **Accessibility Compliance Gate**
   - Validate WCAG 2.1 AA compliance (and WCAG 2.2 additions: focus not obscured, target size 24x24px, dragging alternatives)

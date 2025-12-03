@@ -64,6 +64,17 @@
   - Evaluate bias, safety, and prompt-injection defenses; log prompts/responses with PII redaction
   - Separate training/serving data; ensure consent for any user data used in fine-tuning
 
+- [ ] **Agent-Assisted Delivery Gate (AutoGPT/AutoGen/Devin)**
+  - Keep agents in isolated sandboxes (separate devbox/VM) with least-privilege network/file access; no production creds
+  - Require plan → approve → execute → report loop; humans must approve plans before run and review PRs after (Devin-style workflow)
+  - Enforce runtime guardrails (e.g., policy/AgentSpec) for risky actions: file writes, network calls, shell, deployments; block on policy violations and log interventions
+  - Track and enforce API/runtime budgets; fail fast when budget/time thresholds hit; surface remaining budget to operators
+  - Maintain SBOM + dependency pinning and apply security advisories for agent frameworks; forbid legacy/`classic` AutoGPT code path
+  - Version and test prompts/agent configs; measure stability/variance of auto-generated prompts before rollout
+  - Log every agent action (prompt, tool call, file diff) to immutable storage with PII/key redaction
+  - Provide explicit allowlist/denylist for commands and domains; disable self-updates and package installs unless pre-approved
+  - Freeze production environments: agents may only touch feature branches or preview deployments; require human merge and deployment
+
 - [ ] **Backup, DR & Business Continuity Gate**
   - Define RPO/RTO per system; schedule tested restores for databases, assets, and critical configs
   - Validate multi-region/zone redundancy where needed; document dependency failovers
@@ -77,4 +88,3 @@
   - Standardize event taxonomy (name, schema, PII classification); validate firing and deduplication
   - Ensure A/B tests have guardrails (SRM checks, exposure caps, kill switches) and documented hypotheses
   - Respect consent and geo rules before firing analytics/marketing pixels; provide server-side tagging where possible
-
