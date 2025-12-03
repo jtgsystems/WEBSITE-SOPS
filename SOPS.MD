@@ -13,6 +13,7 @@ Lifecycle-aligned SOPs are now split into focused files. Start with the cross-cu
 - [07 — Operational & Governance Gates](sops/07-operations-governance.md)
 - [08 — Gate Review Process & Metrics](sops/08-process-metrics.md)
 - [09 — Appendix: Advanced Patterns & Landing Page Elements](sops/09-appendix-advanced.md)
+- [10 — Playbooks (Agent & Human-Autonomy Safe Defaults)](sops/10-playbooks.md)
 
 ## How to use
 - Treat each file as a checklist for its lifecycle; duplicate or tailor per project as needed.
