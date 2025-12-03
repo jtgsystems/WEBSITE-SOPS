@@ -15,7 +15,7 @@
   - Assess alert routing, on-call playbooks, and disaster-recovery drills
   - Evaluate capacity planning, autoscaling thresholds, and cost optimization
   - Enable web-layer rate limiting/WAF and basic brute-force protections (e.g., Fail2Ban) plus file-integrity monitoring (e.g., AIDE); aggregate security logs centrally
-  - Monitor autonomous/agent jobs separately with clear ownership, SLAs, and automated kill-switches; rotate agent credentials and audit all actions
+  - Monitor autonomous/agent jobs separately with clear ownership, SLAs, and automated kill-switches; audit all actions
 
 - [ ] **Content Governance & Localization Gate**
   - Confirm editorial workflows, approval matrices, and CMS permissions

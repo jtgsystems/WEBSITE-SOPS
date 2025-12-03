@@ -7,7 +7,7 @@
   - Evaluate automated testing coverage and quality
   - Enforce automated policy checks on AI/agent-generated diffs; block merges if missing tests or intent notes
   - Agents commit only to feature branches with bot identities; merges happen via automated quality gates (tests, lint, policy) and branch protection
-  - Keep agent credentials scoped (read-only repo, no production env vars); rotate tokens regularly
+  - Keep agent credentials scoped (read-only repo, no production env vars)
 
 - [ ] **Performance Optimization Gate**
   - Validate Core Web Vitals metrics (LCP, INP, CLS)

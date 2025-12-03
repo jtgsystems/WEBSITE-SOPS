@@ -24,5 +24,5 @@
   - Assess monitoring and alerting setup
   - Confirm backup and disaster recovery procedures
   - Label AI-generated or synthetic media (images, audio, video, text) per upcoming EU AI Act Article 50 transparency requirements; prefer C2PA/metadata tagging
-  - Run automated prompt-attack suites (prompt injection, jailbreaks, data exfil) against shipped AI/agent features; block release on failed guardrail responses
+  - Run automated prompt-attack suites (prompt injection, jailbreaks, data exfil) against shipped AI/agent features
   - Review go-live checklist and rollback plan

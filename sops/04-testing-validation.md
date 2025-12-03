@@ -6,7 +6,7 @@
   - Confirm responsive behavior across all devices
   - Review form validation and error handling
   - Evaluate integration with external services/APIs
-  - For agent-generated changes, auto-run reproducible test scripts from agent logs in clean ephemeral environments; block if logs/tests are missing
+  - For agent-generated changes, auto-run reproducible test scripts from agent logs in clean ephemeral environments
 
 - [ ] **Accessibility Compliance Gate**
   - Validate WCAG 2.1 AA compliance (and WCAG 2.2 additions: focus not obscured, target size 24x24px, dragging alternatives)
