@@ -1,6 +1,7 @@
 ## Post-Launch Gates
 - [ ] **Initial Monitoring Gate (24-48 hours post-launch)**
   - Monitor site performance and error rates
+  - Track real-user Core Web Vitals, especially INP, for regressions
   - Validate analytics data accuracy and completeness
   - Assess user feedback and support ticket volume
   - Review conversion rates and key metrics
@@ -18,5 +19,5 @@
   - Assess technical debt and maintenance requirements
   - Validate security updates and vulnerability patches
   - Evaluate feature usage and prioritization for updates
+  - Check consent/opt-out flows (e.g., GPC) and remediation backlog
   - Confirm ongoing compliance with standards and regulations
-

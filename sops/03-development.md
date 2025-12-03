@@ -7,7 +7,8 @@
   - Evaluate automated testing coverage and quality
 
 - [ ] **Performance Optimization Gate**
-  - Validate Core Web Vitals metrics (LCP, FID, CLS)
+  - Validate Core Web Vitals metrics (LCP, INP, CLS)
+  - Track Interaction to Next Paint (INP) as the primary responsiveness metric (replaced FID in March 2024); keep INP <200ms in field data
   - Assess loading speed and optimization techniques
   - Review resource optimization (images, fonts, scripts)
   - Confirm caching strategies and CDN implementation
@@ -19,4 +20,3 @@
   - Review data protection and privacy compliance
   - Confirm secure coding practices and vulnerability scanning
   - Evaluate third-party dependency security
-

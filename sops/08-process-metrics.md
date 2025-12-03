@@ -11,7 +11,7 @@
 - [ ] **Risk Assessment**: Evaluate potential issues and mitigation plans
 
 ## Quality Metrics
-- [ ] **Performance Metrics**: LCP <2.5s, FID <100ms, CLS <0.1
+- [ ] **Performance Metrics**: LCP <2.5s, INP <200ms, CLS <0.1 (INP replaced FID in March 2024)
 - [ ] **Accessibility Score**: WCAG compliance level achieved
 - [ ] **Code Quality**: Test coverage >85%, maintainability index
 - [ ] **User Satisfaction**: NPS/CSAT scores, task completion rates
@@ -27,4 +27,3 @@
 - [ ] **Risk Mitigation**: Develop contingency plans
 - [ ] **Re-review Scheduling**: Plan follow-up gate review
 - [ ] **Communication Plan**: Notify stakeholders of issues and plans
-

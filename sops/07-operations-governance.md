@@ -4,6 +4,8 @@
   - Confirm consent management, cookie policies, and data retention schedules
   - Review terms of use, privacy policy, and accessibility statements with legal stakeholders
   - Assess third-party contracts, DPAs, and vendor risk documentation
+  - Honor Global Privacy Control/universal opt-out signals (e.g., Colorado recognizes GPC as UOOM) and document how signals are enforced
+  - Track AI transparency/labeling duties ahead of EU AI Act Article 50 enforcement (effective August 2, 2026) for synthetic media
   - Evaluate incident response, breach notification plans, and compliance audit evidence
 
 - [ ] **DevOps & Observability Gate**
@@ -26,4 +28,3 @@
   - Set up in-product feedback widgets, surveys, and qualitative listening posts
   - Review CRM/marketing automation integrations for post-launch nurturing
   - Establish closed-loop processes for prioritizing insights into the roadmap
-

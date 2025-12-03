@@ -11,6 +11,7 @@
   - Assess conversion funnel setup and goal tracking
   - Confirm A/B testing framework and experimentation setup
   - Review privacy compliance (GDPR, CCPA) for tracking
+  - Honor Global Privacy Control/universal opt-out signals before firing marketing pixels; ensure graceful behavior with third-party cookies blocked
   - Evaluate data collection and reporting capabilities
 
 - [ ] **Launch Readiness Gate**
@@ -18,5 +19,5 @@
   - Validate production environment configuration
   - Assess monitoring and alerting setup
   - Confirm backup and disaster recovery procedures
+  - Label AI-generated or synthetic media (images, audio, video, text) per upcoming EU AI Act Article 50 transparency requirements; prefer C2PA/metadata tagging
   - Review go-live checklist and rollback plan
-
