@@ -16,6 +16,7 @@
   - Evaluate capacity planning, autoscaling thresholds, and cost optimization
   - Enable web-layer rate limiting/WAF and basic brute-force protections (e.g., Fail2Ban) plus file-integrity monitoring (e.g., AIDE); aggregate security logs centrally
   - Monitor autonomous/agent jobs separately with clear ownership, SLAs, and automated kill-switches; audit all actions
+  - Maintain security headers baseline post-launch and track drift; alert if CSP/HSTS/referrer/permissions policies are removed or weakened
 
 - [ ] **Content Governance & Localization Gate**
   - Confirm editorial workflows, approval matrices, and CMS permissions

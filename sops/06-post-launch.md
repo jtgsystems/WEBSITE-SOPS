@@ -2,6 +2,7 @@
 - [ ] **Initial Monitoring Gate (24-48 hours post-launch)**
   - Monitor site performance and error rates
   - Track real-user Core Web Vitals, especially INP, for regressions
+  - Alert on p75 Web Vitals budgets (LCP <2.5s, INP <200ms, CLS <0.1) using RUM dashboards
   - Validate analytics data accuracy and completeness
   - Assess user feedback and support ticket volume
   - Review conversion rates and key metrics
