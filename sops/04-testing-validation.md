@@ -11,6 +11,8 @@
   - Validate WCAG 2.1 AA compliance (and WCAG 2.2 additions: focus not obscured, target size 24x24px, dragging alternatives)
   - Assess screen reader compatibility
   - Confirm keyboard navigation support
+  - Verify visible focus indicators on all interactive elements (focus-visible rings) and presence of skip-to-content/skip-to-footer links
+  - Check mobile/touch targets meet 44x44px minimum for nav/footer links and critical controls
   - Review color contrast and visual accessibility
   - Evaluate focus management and ARIA implementation
 

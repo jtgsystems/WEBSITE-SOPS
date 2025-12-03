@@ -14,6 +14,7 @@
   - Review logging, metrics, tracing, and synthetic monitoring coverage
   - Assess alert routing, on-call playbooks, and disaster-recovery drills
   - Evaluate capacity planning, autoscaling thresholds, and cost optimization
+  - Enable web-layer rate limiting/WAF and basic brute-force protections (e.g., Fail2Ban) plus file-integrity monitoring (e.g., AIDE); aggregate security logs centrally
 
 - [ ] **Content Governance & Localization Gate**
   - Confirm editorial workflows, approval matrices, and CMS permissions

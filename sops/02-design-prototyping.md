@@ -10,6 +10,7 @@
   - Review micro-interactions and animation appropriateness
   - Validate state management and feedback mechanisms
   - Assess touch/mobile interaction patterns
+  - Specify minimum touch target sizing (>=44px) and focus-visible styles in the design system; include skip-to-content in header/footer patterns
   - Confirm error handling and edge case designs
   - Evaluate performance implications of interactions
 
@@ -19,4 +20,3 @@
   - Assess learnability and user satisfaction metrics
   - Review accessibility compliance in interactive elements
   - Confirm cross-device compatibility and performance
-
