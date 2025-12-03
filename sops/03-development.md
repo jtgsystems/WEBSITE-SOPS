@@ -9,6 +9,7 @@
   - Enforce automated policy checks on AI/agent-generated diffs; block merges if missing tests or intent notes
   - Agents commit only to feature branches with bot identities; merges happen via automated quality gates (tests, lint, policy) and branch protection
   - Provide pre-commit hooks and local parity scripts the agent can run (lint, typecheck, tests) to reduce CI/agent drift
+  - Require agent self-verification: rerun generated tests/specs locally and bail out with failure summary if red; no auto-retries beyond budget
 
 - [ ] **Performance Optimization Gate**
   - Validate Core Web Vitals metrics (LCP, INP, CLS)

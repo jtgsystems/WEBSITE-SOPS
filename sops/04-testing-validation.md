@@ -11,6 +11,7 @@
   - Require Lighthouse/PSI or WebPageTest checks for key templates; fail gate if Core Web Vitals budgets regress
   - Run Lighthouse CI/GitHub Action per PR with score thresholds (Performance ≥90, Accessibility ≥95, Best Practices ≥95, SEO ≥95); block merge if below
   - Require snapshot/UI regression testing (visual diff) on critical pages; gate merges on diff review
+  - Capture deterministic replay logs for agent test runs (commands, env, seeds) so failures can be reproduced automatically
 
 - [ ] **Accessibility Compliance Gate**
   - Validate WCAG 2.1 AA compliance (and WCAG 2.2 additions: focus not obscured, target size 24x24px, dragging alternatives)
