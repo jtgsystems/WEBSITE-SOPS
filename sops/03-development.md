@@ -5,8 +5,8 @@
   - Assess code maintainability and documentation
   - Confirm version control and collaboration practices
   - Evaluate automated testing coverage and quality
-  - Require human review of AI/agent-generated diffs; reject changes without unit/integration tests and clear intent notes
-  - Ensure agents commit only to feature branches with signed commits disabled for bots; humans squash/merge after review
+  - Enforce automated policy checks on AI/agent-generated diffs; block merges if missing tests or intent notes
+  - Agents commit only to feature branches with bot identities; merges happen via automated quality gates (tests, lint, policy) and branch protection
   - Keep agent credentials scoped (read-only repo, no production env vars); rotate tokens regularly
 
 - [ ] **Performance Optimization Gate**
