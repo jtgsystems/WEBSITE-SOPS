@@ -71,3 +71,15 @@ Use these turnkey sequences when spinning up autonomous runs for web projects. E
 3) Validate analytics integrity; compare to pre-launch baselines.
 4) Run quick LH sample; ensure vitals steady.
 5) File follow-ups for any regressions; schedule patch window.
+
+## P8: Best-of Industry Engineering Fundamentals (GOV.UK, 18F, Microsoft, Truss)
+1) Team setup: multidisciplinary squad (dev, design, research, QA, PM) with daily user-contact time and weekly usability tests; publish working agreements.
+2) Source control: trunk or short-lived branches with mandatory PR review, status checks (lint, typecheck, tests, Lighthouse CI), and protected main.
+3) CI/CD: every merge deploys to staging with automated smoke + accessibility (axe) + contract tests; production deploys are one-click and reversible.
+4) Quality bars: fail build on any lint/type warning; enforce coverage gates; visual regression on critical templates; perf budgets in CI; Web Vitals RUM shipping to analytics.
+5) Accessibility: apply 18F checklist A/B/C; WCAG 2.2 AA as default; test with keyboard, screen reader, and 3 Hz flash audit; ensure target size ≥44px and focus-visible.
+6) Service standards: align to GOV.UK/ONS service standard—solve whole user problem, open code, publish performance metrics, run service assessments at alpha/beta/live.
+7) Documentation: every feature ships with ADR or design note, runbook, and user-facing change log; keep README and architecture diagrams updated per release.
+8) Security & privacy: security headers baseline (CSP, HSTS, Referrer-Policy, Permissions-Policy), dependencies scanned, SBOM stored; consent/GPC honored and logged.
+9) Observability: standard log fields (trace/span, user/session anon id), uptime checks for top journeys, SLOs with error budgets, alert runbooks, and postmortems within 72h.
+10) Continuous improvement: monthly retro on incident/assessment findings; add failing test for each defect before fix; archive lessons in the playbook.
