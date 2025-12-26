@@ -3,9 +3,9 @@
 ## Project Overview
 
 **Repository**: jtgsystems/WEBSITE-SOPS
-**Purpose**: Comprehensive checklist and standard operating procedures for building high-converting, modern landing pages and websites.
+**Purpose**: Comprehensive standard operating procedures, checklists, and best practices for building high-converting, modern websites and landing pages.
 
-This repository serves as a living document and reference guide for implementing best practices in web design, user experience, conversion optimization, and performance. It provides a complete roadmap for building professional websites with modern design patterns, accessibility features, and technical optimizations.
+This repository serves as a living documentation system and reference guide for implementing industry best practices in web design, development, user experience, conversion optimization, and performance. It provides lifecycle-aligned quality control gates, design playbooks, development standards, security procedures, and integration guides for AI coding assistants and modern web frameworks.
 
 ---
 
@@ -13,226 +13,200 @@ This repository serves as a living document and reference guide for implementing
 
 ```
 WEBSITE-SOPS/
-├── README.md           # Project introduction
-├── SOPS.MD            # Main standard operating procedures document
-├── banner.png         # Repository banner image
-└── CLAUDE.md          # This file - project documentation
+├── README.md                   # Brief introduction and navigation
+├── SOPS.MD                     # Main entry point linking to lifecycle SOPs
+├── INDEX.md                    # Master index of all resources
+├── GETTING-STARTED.md          # Quick start guide for new users
+├── CATALOG-SUMMARY.md          # Summary report of all documentation
+├── WEB_DESIGN_PLAYBOOK.md      # 75+ web design elements and patterns
+├── MANIFEST.txt                # File manifest and structure
+├── banner.png                  # Repository banner image
+│
+├── sops/                       # Lifecycle-aligned SOP files
+│   ├── 00-standards.md         # 2025 cross-cutting standards
+│   ├── 01-discovery-planning.md
+│   ├── 02-design-prototyping.md
+│   ├── 03-development.md
+│   ├── 04-testing-validation.md
+│   ├── 05-pre-launch.md
+│   ├── 06-post-launch.md
+│   ├── 07-operations-governance.md
+│   ├── 08-process-metrics.md
+│   ├── 09-appendix-advanced.md       # Advanced patterns & components
+│   ├── 10-playbooks.md               # Agent & human-autonomy defaults
+│   ├── 11-autonomous-discovery.md    # Website evaluation procedures
+│   └── 12-automation-orchestration.md
+│
+├── AI-CODING-ASSISTANTS/       # AI tool integration guides
+│   ├── DEVIN.md                # Devin AI autonomous development
+│   ├── CURSOR.md               # Cursor editor with GitHub integration
+│   ├── COPILOT.md              # GitHub Copilot workflows
+│   ├── SOURCEGRAPH-CODY.md     # Sourcegraph Cody integration
+│   └── CLAUDE-CODE.md          # Claude Code workflows
+│
+├── DEVELOPMENT-STANDARDS/      # Development process standards
+│   ├── GIT-WORKFLOW.md         # Gitflow branching strategy
+│   ├── CODE-REVIEW.md          # Code review procedures
+│   ├── TESTING.md              # Testing standards and frameworks
+│   └── CI-CD.md                # CI/CD pipeline configuration
+│
+├── SECURITY/                   # Security best practices
+│   ├── SECRET-MANAGEMENT.md    # Environment variables and secrets
+│   └── DATA-PROTECTION.md      # Data protection standards
+│
+├── TEMPLATES/                  # Project templates and checklists
+│   ├── PROJECT-SETUP.md        # 10-phase project initialization
+│   ├── DOCUMENTATION-TEMPLATE.md
+│   └── DEPLOYMENT-CHECKLIST.md
+│
+└── WEB-FRAMEWORKS/             # Framework-specific guides
+    ├── NEXTJS.md               # Next.js development guide
+    ├── WEBFLOW.md              # Webflow integration
+    ├── FRAMER.md               # Framer development
+    └── (other framework guides)
 ```
 
-### Key Files
+---
 
-- **README.md**: Brief introduction to the repository purpose
-- **SOPS.MD**: Comprehensive checklist covering all aspects of modern website development (50KB+)
-- **banner.png**: Visual branding for the repository
+## Core Components
+
+### 1. Lifecycle-Aligned Quality Control Gates (sops/)
+
+The heart of this repository is the lifecycle-aligned SOP system that provides quality control gates for each phase of website development:
+
+- **00-standards.md**: 2025 cross-cutting standards applicable to all phases
+- **01-discovery-planning.md**: Discovery and planning phase gates
+- **02-design-prototyping.md**: Design and prototyping quality checks
+- **03-development.md**: Development phase standards and gates
+- **04-testing-validation.md**: Testing and validation procedures
+- **05-pre-launch.md**: Pre-launch checklist and verification
+- **06-post-launch.md**: Post-launch monitoring and optimization
+- **07-operations-governance.md**: Operational and governance procedures
+- **08-process-metrics.md**: Gate review process and success metrics
+- **09-appendix-advanced.md**: Advanced patterns and landing page elements (50KB+)
+- **10-playbooks.md**: Agent and human-autonomy safe defaults
+- **11-autonomous-discovery.md**: Autonomous website discovery and evaluation (19KB+)
+- **12-automation-orchestration.md**: Automation and orchestration procedures (19KB+)
+
+### 2. Web Design Playbook
+
+**WEB_DESIGN_PLAYBOOK.md** (230KB+) contains 75+ comprehensive web design elements and patterns:
+- Direct persona communication
+- Benefits-focused language
+- Social proof and quantification
+- Hero section designs (multiple variations)
+- Navigation patterns
+- Feature showcase components
+- Trust indicators and testimonials
+- Call-to-action elements
+- Pricing and plan components
+- Footer designs
+- Visual design elements (glassmorphism, neumorphism, etc.)
+- Performance optimizations
+- Mobile-specific enhancements
+- Conversion optimization techniques
+- Interactive demonstrations
+- Accessibility-first design
+- Progressive disclosure patterns
+- Data visualization components
+
+### 3. AI Coding Assistants Integration
+
+Comprehensive guides for integrating AI coding tools into your workflow:
+
+- **Devin AI**: Autonomous AI development, PR reviews, testing automation
+- **Cursor**: AI-powered editor with GitHub integration, custom rules (.cursorrules)
+- **GitHub Copilot**: Native GitHub integration, agentic workflows, custom instructions
+- **Sourcegraph Cody**: Context-aware code completion, semantic search
+- **Claude Code**: AI-assisted development workflows
+
+Each guide includes:
+- Setup and configuration
+- GitHub integration procedures
+- Best practices and workflows
+- Custom configuration examples
+- Troubleshooting common issues
+
+### 4. Development Standards
+
+Professional development workflows and standards:
+
+- **GIT-WORKFLOW.md**: Comprehensive Gitflow branching strategy
+  - Feature, release, and hotfix workflows
+  - Commit conventions and best practices
+  - Pull request process
+  - Branch protection rules
+  - Conflict resolution procedures
+
+- **CODE-REVIEW.md**: Code review standards and checklists
+- **TESTING.md**: Testing frameworks and coverage requirements (Jest, Cypress, Playwright, Vitest)
+- **CI-CD.md**: GitHub Actions workflows and automation
+
+### 5. Security Procedures
+
+**SECRET-MANAGEMENT.md**: Comprehensive secret management guide covering:
+- Environment variable management (.env files)
+- GitHub Secrets configuration
+- Secret rotation procedures
+- Handling leaked credentials
+- Pre-commit hooks for security
+- Team security guidelines
+
+**DATA-PROTECTION.md**: Data protection standards including GDPR compliance, encryption, access control
+
+### 6. Project Templates
+
+**PROJECT-SETUP.md**: Complete 10-phase project initialization checklist:
+1. Repository configuration
+2. Directory structure
+3. Dependencies and package managers
+4. Environment configuration
+5. Git hooks setup
+6. CI/CD pipeline setup
+7. Scripts and automation
+8. Documentation templates
+9. Team setup procedures
+10. Initial commits and verification
 
 ---
 
-## Technology Stack
+## Technology Stack & Recommendations
 
-This is a documentation-only repository providing guidelines for implementing websites using:
+This is a documentation-only repository providing guidelines for implementing websites using modern technologies:
 
-### Recommended Technologies (Based on SOPs)
-
-**Frontend Frameworks**:
-- Modern JavaScript frameworks (React, Next.js, Vue, etc.)
+### Frontend Frameworks
+- React, Next.js, Vue, Svelte
 - HTML5 with semantic elements
-- CSS3 with modern features (Grid, Flexbox, Custom Properties)
+- CSS3 (Grid, Flexbox, Custom Properties)
 
-**Animation & Interactivity**:
+### Animation & Interactivity
 - CSS animations and transforms
 - Intersection Observer API
-- requestAnimationFrame for JavaScript animations
-- Three.js for WebGL/3D elements (optional)
+- requestAnimationFrame
+- Three.js for WebGL/3D (optional)
 - Canvas API for custom graphics
 
-**Performance**:
+### Performance
 - Modern image formats (AVIF, WebP)
-- Lazy loading
-- Code splitting
+- Lazy loading and code splitting
 - Service Workers for offline capabilities
-
-**Build Tools**:
-- Vite or Webpack for bundling
-- PostCSS or Sass for CSS preprocessing
-- Minification and optimization tools
-
-**Testing & QA**:
-- Lighthouse for performance audits
-- Cross-browser testing tools
-- Accessibility testing tools
-
----
-
-## Content Structure
-
-The SOPS.MD document is organized into major sections covering:
-
-### 1. Final Details & Refinements
-- Microinteraction polish
-- Content tone consistency
-- Visual consistency audits
-- Accessibility passes
-- Browser and device testing
-
-### 2. Advanced Pattern Implementations
-- Multi-step user flows
-- Progressive disclosure patterns
-- Content filtering systems
-- Guided tours and onboarding
-
-### 3. Industry-Specific Elements
-- SaaS components (dashboards, ROI calculators)
-- E-commerce elements (product carousels, checkout flows)
-- Service business components (booking interfaces, certifications)
-- B2B-focused elements (case studies, security indicators)
-- Mobile app landing elements
-
-### 4. Social Integration Elements
-- Social sharing optimizations
-- User-generated content displays
-- Social proof integration
-- Community showcases
-
-### 5. Modern Design Aesthetic Elements
-- Minimalist layout techniques
-- Color psychology implementation
-- Typography as design element
-- Visual metaphor implementation
-- Asymmetrical balance
-
-### 6. Advanced Technical Implementations
-- WebGL backgrounds
-- CSS-only animations
-- Advanced scroll-based techniques
-- Canvas-based graphics
-- Custom cursor effects
-
-### 7. Brand Experience Elements
-- Brand consistency systems
-- Brand story integration
-- Brand personality expression
-- Visual brand differentiation
-
-### 8. Interactive Learning Components
-- Guided product tours
-- Interactive demos
-- Educational content modules
-- Interactive infographics
-
-### 9. Content Strategy Elements
-- Storytelling components
-- Content hierarchy optimization
-- Persuasive content patterns
-- Content personalization
-- Value proposition clarity
-
-### 10. Advanced Visual Effects
-- Parallax scrolling
-- Subtle background video
-- 3D transforms and perspective
-- CSS backdrop effects
-- Advanced gradient techniques
-
-### 11. Mobile-Specific Enhancements
-- Touch-optimized controls
-- Mobile navigation patterns
-- Orientation optimization
-- Offline capabilities
-- Mobile performance optimizations
-
-### 12. Conversion Optimization Elements
-- Smart CTA placement
-- Social proof near conversion points
-- Form optimization
-- Exit intent strategies
-- Urgency and scarcity elements
-
-### 13. Landing Page Components Checklist
-
-Comprehensive breakdown of all essential landing page components:
-
-#### Hero Section (7 variations)
-- Hero banner with strong value proposition
-- Minimalist hero with 3D elements
-- Animated wave background
-- Floating card layout
-- Split-screen hero
-- Video background hero
-
-#### Navigation & Header (7 variations)
-- Smart navigation bars
-- Transparent to solid navigation
-- Mega menu dropdowns
-- Side navigation with animation
-- Split header with image
-- Floating navigation elements
-
-#### Feature Showcase (8 variations)
-- Feature highlights with animations
-- 3D feature cards
-- Step-by-step process flows
-- Feature comparison grids
-- Expandable feature cards
-- Tabbed feature interfaces
-- Interactive feature demos
-
-#### Social Proof & Trust (8 variations)
-- Testimonial sections and carousels
-- Avatar testimonial grids
-- Animated star ratings
-- Logo carousels
-- Customer success metrics
-- Video testimonials
-- Trust badge collections
-
-#### Call-to-Action Sections (8 variations)
-- Gradient CTA buttons
-- Full-width CTA banners
-- Two-column CTA with image
-- Animated CTA elements
-- Floating action buttons
-- Multistep conversion processes
-
-#### Pricing & Plans (8 variations)
-- Modern pricing cards
-- Horizontal pricing sliders
-- Feature comparison tooltips
-- Pricing toggles with savings displays
-- Tiered pricing visualizations
-- Custom plan builders
-
-#### Footer Elements (7 variations)
-- Comprehensive multi-column footers
-- Two-tone footer designs
-- Newsletter signup with animation
-- Footer with brand elements
-- Sitemap grid layouts
-- Footer with call-to-action
-
-#### Visual Design Elements (9 variations)
-- Glassmorphism effects
-- Geometric background patterns
-- Neumorphic UI elements
-- Micro-interaction systems
-- Dark mode implementation
-- Gradient mesh backgrounds
-- Brutalist design elements
-
-#### Performance Optimizations
-- Page speed elements
-- Next-gen image formats
-- Animation performance
 - Core Web Vitals optimization
 
-#### Additional Creative Elements (8 variations)
-- Interactive 3D elements
-- Cursor effects
-- Scroll-triggered animations
-- Particle effects
-- Text animation effects
-- Immersive scroll experiences
-- Interactive data visualizations
-- Animated mascots/characters
+### Build Tools
+- Vite or Webpack for bundling
+- PostCSS or Sass for preprocessing
+- Minification and optimization tools
+
+### Testing & QA
+- Lighthouse for performance audits
+- Cross-browser testing tools
+- Accessibility testing (WCAG compliance)
+
+### Website Builders (Integration Guides)
+- Webflow (API integration)
+- Wix (Velo platform development)
+- Squarespace (template development)
+- Framer (plugin development)
 
 ---
 
@@ -241,292 +215,278 @@ Comprehensive breakdown of all essential landing page components:
 ### Recommended Approach
 
 1. **Planning Phase**
-   - Review SOPS.MD checklist
-   - Identify required components for your project
+   - Review relevant lifecycle SOPs from sops/ directory
+   - Consult WEB_DESIGN_PLAYBOOK.md for design patterns
+   - Reference 00-standards.md for cross-cutting requirements
    - Create component priority list
-   - Plan mobile-first responsive approach
 
-2. **Component Development**
-   - Build reusable component library
-   - Follow accessibility guidelines (ARIA labels, keyboard navigation)
-   - Implement consistent design tokens (colors, spacing, typography)
-   - Create responsive breakpoints system
+2. **Setup Phase**
+   - Follow PROJECT-SETUP.md 10-phase checklist
+   - Configure environment variables per SECRET-MANAGEMENT.md
+   - Setup Git workflow per GIT-WORKFLOW.md
+   - Configure CI/CD pipeline per CI-CD.md
 
-3. **Integration Phase**
-   - Combine components into complete sections
-   - Test cross-browser compatibility
-   - Optimize performance (lazy loading, code splitting)
-   - Implement analytics and tracking
+3. **Development Phase**
+   - Follow 03-development.md quality gates
+   - Use AI coding assistants per relevant guide
+   - Implement responsive, accessible components
+   - Follow framework-specific best practices (NEXTJS.md)
 
-4. **Testing & Refinement**
+4. **Testing & Validation Phase**
+   - Execute 04-testing-validation.md checklist
    - Run Lighthouse audits
-   - Test on multiple devices and browsers
+   - Test cross-browser compatibility
    - Validate accessibility (WCAG compliance)
-   - A/B test conversion elements
 
-5. **Launch & Optimization**
-   - Deploy with proper caching headers
-   - Monitor Core Web Vitals
-   - Implement continuous A/B testing
-   - Gather user feedback and iterate
+5. **Pre-Launch Phase**
+   - Complete 05-pre-launch.md verification
+   - Security audit per SECRET-MANAGEMENT.md
+   - Performance optimization review
+   - Final QA pass
+
+6. **Launch & Post-Launch**
+   - Deploy following framework deployment guide
+   - Execute 06-post-launch.md monitoring
+   - Implement 07-operations-governance.md procedures
+   - Track metrics per 08-process-metrics.md
 
 ---
 
-## Configuration and Setup
+## Usage Guide
 
-This is a documentation repository, so there are no dependencies to install. However, when implementing the guidelines:
+### For New Projects
+1. Start with `GETTING-STARTED.md` for orientation
+2. Follow `TEMPLATES/PROJECT-SETUP.md` for initialization
+3. Reference `sops/00-standards.md` for baseline requirements
+4. Work through lifecycle SOPs (01-12) as applicable
 
-### Recommended Setup for Implementation Projects
+### For Development Teams
+1. Review `README.md` for overview
+2. Implement `DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md`
+3. Configure secrets per `SECURITY/SECRET-MANAGEMENT.md`
+4. Select and configure AI coding assistant from `AI-CODING-ASSISTANTS/`
+5. Use lifecycle SOPs as quality gates
 
-```bash
-# Clone this repository for reference
-git clone git@github.com:jtgsystems/WEBSITE-SOPS.git
+### For Designers
+1. Reference `WEB_DESIGN_PLAYBOOK.md` for design patterns
+2. Review `sops/02-design-prototyping.md` for design gates
+3. Consult `sops/09-appendix-advanced.md` for advanced patterns
 
-# Use as a checklist alongside your main project
-# Reference SOPS.MD during development planning
-```
-
-### Using the SOPs
-
-1. **Project Initialization**
-   - Review SOPS.MD for applicable sections
-   - Create a project-specific checklist
-   - Prioritize components based on business goals
-
-2. **Component Selection**
-   - Choose design patterns that fit your brand
-   - Select appropriate technical implementations
-   - Plan for accessibility from the start
-
-3. **Implementation**
-   - Follow best practices outlined in each section
-   - Use modern web standards
-   - Test continuously during development
+### For DevOps/Deployment
+1. Follow framework deployment guide (e.g., `WEB-FRAMEWORKS/NEXTJS.md`)
+2. Implement `DEVELOPMENT-STANDARDS/CI-CD.md` workflows
+3. Configure secrets per `SECURITY/SECRET-MANAGEMENT.md`
+4. Execute `sops/05-pre-launch.md` verification
 
 ---
 
 ## Best Practices
 
 ### Accessibility (A11Y)
-- Keyboard navigation support for all interactive elements
+- Keyboard navigation for all interactive elements
 - Proper ARIA labels and semantic HTML
-- Color contrast verification (WCAG AA minimum)
-- Focus indicators for all interactive elements
+- WCAG AA minimum color contrast
+- Focus indicators
 - Screen reader optimization
 - Reduced motion alternatives
 
 ### Performance
+- Core Web Vitals targets (LCP < 2.5s, FID < 100ms, CLS < 0.1)
 - Mobile-first approach
-- Lazy loading for images and heavy components
+- Lazy loading images and components
 - Code splitting and tree shaking
 - Modern image formats (AVIF with WebP fallback)
-- Minified and compressed assets
 - Critical CSS inlining
-- Proper caching strategies
+
+### Security
+- Never commit .env files
+- Use GitHub Secrets for CI/CD
+- Rotate credentials every 3-6 months
+- Implement pre-commit hooks
+- Regular security audits
 
 ### SEO
 - Semantic HTML structure
 - Proper heading hierarchy (H1-H6)
 - Schema.org markup
 - Meta descriptions and optimized titles
-- Canonical URLs
 - Optimized for voice search
 
 ### Conversion Optimization
-- Clear value propositions
+- Clear value propositions above the fold
 - Strategic CTA placement
 - Social proof elements
 - Trust indicators (badges, certifications)
 - Streamlined forms with inline validation
-- Exit intent strategies
 - A/B testing framework
 
-### Design Principles
-- Consistent visual language
-- Ample white space
-- Clear visual hierarchy
-- Mobile-optimized touch targets (44x44px minimum)
-- Brand consistency throughout
-- Progressive disclosure of complex information
+---
+
+## Git Workflow (Gitflow)
+
+### Branching Strategy
+```
+main          → Production-ready (protected, requires 2 approvals)
+develop       → Integration branch (protected, requires 1 approval)
+feature/*     → New features (branch from develop)
+bugfix/*      → Bug fixes (branch from develop)
+release/*     → Release preparation (branch from develop)
+hotfix/*      → Emergency production fixes (branch from main)
+```
+
+### Commit Message Format
+```
+<type>: <subject>
+
+<optional body with details>
+
+<optional footer with references>
+```
+
+Types: feat, fix, docs, style, refactor, test, chore
 
 ---
 
-## Known Issues and Troubleshooting
+## Quick Reference
 
-### Common Challenges When Implementing SOPs
+### Key Documents by Use Case
 
-**1. Performance vs. Visual Effects**
-- Issue: Heavy animations can impact performance
-- Solution: Use CSS transforms and opacity, implement reduced motion alternatives, monitor Core Web Vitals
+| Use Case | Primary Document | Supporting Documents |
+|----------|-----------------|---------------------|
+| Start new project | `TEMPLATES/PROJECT-SETUP.md` | `sops/01-discovery-planning.md`, `GETTING-STARTED.md` |
+| Design website | `WEB_DESIGN_PLAYBOOK.md` | `sops/02-design-prototyping.md`, `sops/09-appendix-advanced.md` |
+| Setup Git workflow | `DEVELOPMENT-STANDARDS/GIT-WORKFLOW.md` | `sops/00-standards.md` |
+| Manage secrets | `SECURITY/SECRET-MANAGEMENT.md` | `TEMPLATES/PROJECT-SETUP.md` |
+| Use AI tools | `AI-CODING-ASSISTANTS/[TOOL].md` | `DEVELOPMENT-STANDARDS/CODE-REVIEW.md` |
+| Deploy website | `WEB-FRAMEWORKS/NEXTJS.md` | `sops/05-pre-launch.md`, `SECURITY/SECRET-MANAGEMENT.md` |
+| Review code | `DEVELOPMENT-STANDARDS/CODE-REVIEW.md` | `DEVELOPMENT-STANDARDS/TESTING.md` |
+| Test website | `DEVELOPMENT-STANDARDS/TESTING.md` | `sops/04-testing-validation.md` |
 
-**2. Cross-Browser Compatibility**
-- Issue: Modern CSS features (backdrop-filter, WebGL) not universally supported
-- Solution: Implement feature detection and fallbacks, test on all major browsers
+### Essential Commands
 
-**3. Mobile Optimization**
-- Issue: Desktop-first designs often break on mobile
-- Solution: Always use mobile-first approach, test on real devices, optimize touch interactions
+```bash
+# Clone repository for reference
+git clone git@github.com:jtgsystems/WEBSITE-SOPS.git
 
-**4. Accessibility Compliance**
-- Issue: Complex animations and interactions can hinder accessibility
-- Solution: Provide keyboard alternatives, use proper ARIA labels, test with screen readers
+# Start new feature
+git checkout -b feature/feature-name
 
-**5. Content Overload**
-- Issue: Trying to implement too many components at once
-- Solution: Prioritize based on business goals, phase implementation, A/B test additions
+# Commit changes
+git commit -m "feat: add feature description"
 
----
-
-## Testing Approach
-
-### Recommended Testing Strategy
-
-**1. Performance Testing**
-- Run Lighthouse audits (target: 90+ scores)
-- Monitor Core Web Vitals (LCP, FID, CLS)
-- Test on slow 3G connections
-- Validate image optimization
-
-**2. Cross-Browser Testing**
-- Chrome (latest + previous version)
-- Firefox (latest + previous version)
-- Safari (desktop + iOS)
-- Edge (latest)
-
-**3. Device Testing**
-- Mobile phones (iOS and Android)
-- Tablets (portrait and landscape)
-- Desktop (various resolutions)
-- Large displays (4K+)
-
-**4. Accessibility Testing**
-- Keyboard navigation
-- Screen reader compatibility (NVDA, JAWS, VoiceOver)
-- Color contrast verification
-- Focus management
-
-**5. Conversion Testing**
-- A/B test CTA variations
-- Heatmap analysis
-- User session recordings
-- Form abandonment tracking
+# Push feature branch
+git push origin feature/feature-name
+```
 
 ---
 
-## Performance Considerations
+## Documentation Index
 
-### Critical Metrics
+### Core Documentation
+- `README.md` - Main entry point
+- `SOPS.MD` - Lifecycle SOP index
+- `INDEX.md` - Master resource index
+- `GETTING-STARTED.md` - Quick start guide (30min onboarding)
+- `CATALOG-SUMMARY.md` - Complete summary report
+- `MANIFEST.txt` - File manifest
 
-**Core Web Vitals Targets**:
-- Largest Contentful Paint (LCP): < 2.5s
-- First Input Delay (FID): < 100ms
-- Cumulative Layout Shift (CLS): < 0.1
+### Design Resources
+- `WEB_DESIGN_PLAYBOOK.md` - 75+ design patterns (230KB)
+- `sops/09-appendix-advanced.md` - Advanced patterns (50KB)
+- `sops/02-design-prototyping.md` - Design quality gates
 
-**Additional Metrics**:
+### Development Resources
+- `sops/03-development.md` - Development gates
+- `DEVELOPMENT-STANDARDS/` - All development standards
+- `WEB-FRAMEWORKS/` - Framework-specific guides
+
+### Operational Resources
+- `sops/06-post-launch.md` - Post-launch monitoring
+- `sops/07-operations-governance.md` - Governance procedures
+- `sops/08-process-metrics.md` - Metrics and KPIs
+
+### Automation Resources
+- `sops/10-playbooks.md` - Agent-safe defaults
+- `sops/11-autonomous-discovery.md` - Website evaluation (19KB)
+- `sops/12-automation-orchestration.md` - Orchestration (19KB)
+
+---
+
+## Performance Targets
+
+### Core Web Vitals
+- **Largest Contentful Paint (LCP)**: < 2.5s
+- **First Input Delay (FID)**: < 100ms
+- **Cumulative Layout Shift (CLS)**: < 0.1
+
+### Additional Metrics
 - Time to Interactive (TTI): < 3.8s
 - Speed Index: < 3.4s
 - Total Blocking Time: < 200ms
-
-### Optimization Strategies
-
-1. **Image Optimization**
-   - Use AVIF format with WebP fallback
-   - Implement responsive images (srcset)
-   - Lazy load below-fold images
-   - Use blur-up loading technique
-
-2. **Code Optimization**
-   - Minify CSS and JavaScript
-   - Remove unused CSS
-   - Code splitting for large bundles
-   - Tree shaking to eliminate dead code
-
-3. **Loading Strategies**
-   - Critical CSS inlining
-   - Defer non-critical JavaScript
-   - Preconnect to required origins
-   - Prefetch next-page resources
-
-4. **Rendering Performance**
-   - Use CSS transforms for animations
-   - Avoid layout thrashing
-   - Implement virtual scrolling for long lists
-   - Use requestAnimationFrame for JS animations
-
----
-
-## Next Steps and Roadmap
-
-### Future Enhancements for This Repository
-
-- [ ] Add visual examples for each component type
-- [ ] Create code snippets and templates
-- [ ] Provide framework-specific implementations (React, Vue, etc.)
-- [ ] Include case studies of successful implementations
-- [ ] Add video tutorials for complex components
-- [ ] Create interactive component library demo
-- [ ] Develop automated testing checklists
-- [ ] Include performance benchmarking tools
-- [ ] Add localization and internationalization guidelines
-- [ ] Create brand-specific customization templates
-
-### Implementation Milestones
-
-**Phase 1: Foundation**
-- Establish design system and component library
-- Implement core navigation and hero sections
-- Set up performance monitoring
-
-**Phase 2: Content**
-- Build feature showcase components
-- Implement social proof elements
-- Create CTA sections
-
-**Phase 3: Conversion**
-- Add pricing and plan components
-- Implement forms and lead capture
-- Set up analytics and tracking
-
-**Phase 4: Optimization**
-- Run comprehensive testing
-- Optimize for Core Web Vitals
-- Implement A/B testing framework
-
-**Phase 5: Polish**
-- Add advanced animations and effects
-- Implement accessibility enhancements
-- Final cross-browser testing
+- Lighthouse Score: 90+ (all categories)
 
 ---
 
 ## Contributing
 
-This repository serves as a reference guide for web development best practices. While it's maintained by JTGSYSTEMS, contributions and suggestions are welcome.
+This repository serves as a reference guide for web development best practices. While maintained by JTGSYSTEMS, it's designed to be used and adapted by development teams.
 
 ### How to Use
-
-1. Clone or reference this repository when starting new web projects
-2. Use SOPS.MD as a checklist during planning and development
-3. Adapt guidelines to fit your specific project needs
-4. Share feedback on successful implementations
+1. Clone or reference this repository for new web projects
+2. Use SOPs as checklists during planning and development
+3. Adapt guidelines to fit specific project needs
+4. Keep documentation updated with team learnings
 
 ---
 
-## Resources
+## External Resources
 
-### Related Documentation
-- Web Content Accessibility Guidelines (WCAG): https://www.w3.org/WAI/WCAG21/quickref/
-- Core Web Vitals: https://web.dev/vitals/
-- MDN Web Docs: https://developer.mozilla.org/
-- Can I Use (Browser Support): https://caniuse.com/
+### Primary Sources
+- [Devin AI Documentation](https://docs.devin.ai) - Autonomous AI development
+- [Cursor Documentation](https://cursor.com/docs) - AI-powered code editor
+- [GitHub Copilot](https://github.com/features/copilot) - GitHub native AI coding
+- [Next.js Repository](https://github.com/vercel/next.js) - React framework (136k stars)
+- [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - 100+ Cursor configurations (35.8k stars)
 
-### Recommended Tools
-- Lighthouse (Performance Auditing)
-- WebPageTest (Performance Testing)
-- axe DevTools (Accessibility Testing)
-- BrowserStack (Cross-Browser Testing)
-- Google Analytics (User Behavior Tracking)
-- Hotjar (Heatmaps and Session Recordings)
+### Community Resources
+- [SOPLibrary](https://github.com/peytontolbert/SOPLibrary) - Software engineering SOPs
+- [GDI SOPs](https://github.com/GenomicDataInfrastructure/standard-operating-procedures) - Enterprise governance
+- [CDU GitHub SOP](https://cdu-data-science-team.github.io/team-blog/posts/2022-03-21-github-sop/) - Practical Git workflows
+
+### Standards & Guidelines
+- [WCAG 2.1 Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/) - Accessibility guidelines
+- [Core Web Vitals](https://web.dev/vitals/) - Performance metrics
+- [MDN Web Docs](https://developer.mozilla.org/) - Web technology documentation
+- [Can I Use](https://caniuse.com/) - Browser compatibility tables
+
+---
+
+## Known Issues and Considerations
+
+### When Implementing These SOPs
+
+1. **Scope Management**: The playbook contains 75+ design patterns - prioritize based on business goals rather than implementing everything
+
+2. **Performance vs. Visual Effects**: Heavy animations can impact Core Web Vitals - always implement reduced motion alternatives and monitor performance
+
+3. **Cross-Browser Compatibility**: Modern CSS features (backdrop-filter, WebGL) require fallbacks for older browsers
+
+4. **Mobile-First Required**: Desktop-first designs often fail on mobile - always start mobile and scale up
+
+5. **Automation Complexity**: The autonomous discovery and orchestration procedures (sops/11-12) are advanced - start with manual processes first
+
+---
+
+## Repository Statistics
+
+- **Total Documents**: 45+ markdown files
+- **Total Size**: ~1MB (including documentation)
+- **Lifecycle SOPs**: 13 files (00-12)
+- **AI Tool Guides**: 5 tools
+- **Framework Guides**: 4+ frameworks
+- **Development Standards**: 4 core documents
+- **Security Procedures**: 2 documents
+- **Templates**: 3+ templates
 
 ---
 
@@ -536,19 +496,31 @@ This documentation repository is maintained by JTGSYSTEMS and serves as a public
 
 ---
 
-## Contact
+## Contact & Links
 
 **Website**: https://www.jtgsystems.com
-**GitHub**: https://github.com/jtgsystems
+**GitHub Organization**: https://github.com/jtgsystems
 **Repository**: https://github.com/jtgsystems/WEBSITE-SOPS
 
 ---
 
-*Last Updated: 2025-10-26*
+*Last Updated: December 26, 2024*
 *Repository maintained by JTGSYSTEMS*
+*Documentation Version: 2.0*
 
-## Framework Versions
+## Framework and Tool Versions
 
-- No major frameworks detected in this project
-- This may be a utility script, documentation project, or uses custom dependencies
+This is a documentation repository that provides guidelines and standards rather than implementing specific frameworks. Version recommendations are maintained in the individual framework guides (e.g., `WEB-FRAMEWORKS/NEXTJS.md`).
 
+### Key Tools Referenced
+- Next.js: Latest stable (guidelines in NEXTJS.md)
+- GitHub Actions: Native GitHub CI/CD
+- Lighthouse: Latest (for audits)
+- Modern browsers: Support defined per-project
+
+### AI Coding Assistants
+- Devin AI: docs.devin.ai
+- Cursor: cursor.com
+- GitHub Copilot: github.com/features/copilot
+- Sourcegraph Cody: docs.sourcegraph.com/cody
+- Claude Code: claude.ai/claude-code
