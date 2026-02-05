@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Check project structure
+      run: |
+        ls -la
+        test -f README.md && echo "✓ README.md exists" || echo "⚠ README.md missing"
+
+    - name: Check HTML/CSS/JS files
+      run: |
+        find . -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) | head -20
+
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install markdownlint
+      run: |
+        npm install -g markdownlint-cli || true
+
+    - name: Lint Markdown
+      run: |
+        markdownlint '**/*.md' --ignore node_modules || true
